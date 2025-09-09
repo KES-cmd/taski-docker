@@ -60,7 +60,7 @@ jobs:
         with:
           context: ./backend/
           push: true
-          tags: goldengekko/taski_backend:latest
+          tags: ekaterinakondrashkina/taski_backend:latest
   frontend_tests:
     runs-on: ubuntu-latest
 
@@ -99,7 +99,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: goldengekko/taski_frontend:latest
+          tags: ekaterinakondrashkina/taski_frontend:latest
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -118,7 +118,7 @@ jobs:
         with:
           context: ./gateway/
           push: true
-          tags: goldengekko/taski_gateway:latest
+          tags: ekaterinakondrashkina/taski_gateway:latest
   deploy:
     runs-on: ubuntu-latest
     needs: 
